@@ -3,18 +3,14 @@ import { getDeals } from '../api/cheapsharkApi';
 
 /**
  * Hook personalizado para buscar promoções de jogos na API.
+ * Recebe os parâmetros de busca diretamente.
  */
-const useDealsSearch = () => {
+const useDealsSearch = ({ title = '', minPrice = undefined, maxPrice = undefined } = {}) => {
   const [deals, setDeals] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Estados para os parâmetros de busca que podem ser alterados pelo componente
-  const [searchText, setSearchText] = useState('');
-  const [minPriceInput, setMinPriceInput] = useState(''); 
-  const [maxPriceInput, setMaxPriceInput] = useState(''); 
-
-   /**
+  /**
    * Função que faz a busca das promoções na API.
    * Usa useCallback para não ser recriada toda hora.
    */
@@ -22,15 +18,11 @@ const useDealsSearch = () => {
     setLoading(true);
     setError(null);
 
-    // Converte os inputs de preço para número. Se vazio ou não-numérico, retorna undefined/0.
-    const parsedMinPrice = parseFloat(minPriceInput);
-    const parsedMaxPrice = parseFloat(maxPriceInput);
-
-    // Prepara os parâmetros para a API, tratando valores não numéricos/vazios
+    // Os parâmetros já vêm tratados do componente que usa o hook
     const params = {
-      title: searchText,
-      minPrice: isNaN(parsedMinPrice) ? 0 : parsedMinPrice, 
-      maxPrice: isNaN(parsedMaxPrice) ? undefined : parsedMaxPrice, 
+      title: title,
+      minPrice: minPrice,
+      maxPrice: maxPrice,
     };
 
     try {
@@ -42,27 +34,20 @@ const useDealsSearch = () => {
     } finally {
       setLoading(false);
     }
-  }, [searchText, minPriceInput, maxPriceInput]); 
+  }, [title, minPrice, maxPrice]); 
 
   /**
-   * Executa a busca automaticamente quando o hook é usado
-   * ou quando algum filtro (searchText, minPriceInput, maxPriceInput) muda.
+   * Executa a busca automaticamente quando os parâmetros de busca mudam.
    */
   useEffect(() => {
     fetchDeals();
-  }, [fetchDeals]); 
+  }, [fetchDeals]);
 
   return {
     deals,
     loading,
     error,
-    searchText,
-    setSearchText,
-    minPriceInput,
-    setMinPriceInput,
-    maxPriceInput,
-    setMaxPriceInput,
-    fetchDeals, 
+    
   };
 };
 

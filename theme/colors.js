@@ -1,29 +1,33 @@
+
+
 export const colors = {
- lightCream: '#FAE5D8', 
-  softPink: '#DFB682',  
-  mutedLavender: '#824D69',
-  deepMauve: '#522959',   
-  darkIndigo: '#2A114B', 
-  offBlack: '#180018',    
 
-  
-  primary: '#522959',       
-  secondary: '#824D69',    
+  white : '#fff',
+  black : '#000',
 
-  background: '#2A114B',    
+  purpleLightest: '#D9D8D9',
+  purpleLighter: '#B3A3BA',
+  purpleLight: '#8D769A',
+  purpleMedium: '#6B507B',
+  purpleDark: '#46315C',
+  purpleDarkest: '#10091D',
 
-  surface: '#FAE5D8',       
-  textPrimary: '#180018',   
-  textSecondary: '#522959',  
-  textLight: '#FAE5D8',      
+  brandPrimary: '#522959',
+  brandSecondary: '#8D769A',
 
-  priceOld: '#DFB682',    
-  priceCurrent: '#FFC107',  
+  background: '#10091D',
+  surface: '#D9D8D9',
 
- 
-  grayLight: '#DFB682',     
-  grayMedium: '#824D69',   
-  grayDark: '#522959',
+  textDark: '#10091D',
+  textMedium: '#522959',
+  textLight: '#D9D8D9',
+
+  priceOld: '#B3A3BA',
+  priceCurrent: '#8D769A',
+
+  grayishPurpleLight: '#8D769A',
+  grayishPurpleMedium: '#6B507B',
+  grayishPurpleDark: '#46315C',
 };
 
 

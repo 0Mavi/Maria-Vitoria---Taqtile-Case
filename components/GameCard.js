@@ -16,7 +16,7 @@ export default function GameCard({
 
         <PriceRow>
           {oldPrice ? <OldPrice>${oldPrice.toFixed(2)}</OldPrice> : null}
-          <Price> $ {price.toFixed(2)}</Price>
+          <Price> ${price.toFixed(2)}</Price>
         </PriceRow>
       </InfoArea>
 
@@ -25,21 +25,20 @@ export default function GameCard({
   );
 }
 
-/* ---------- styled components ---------- */
+
 
 const CardWrapper = styled.View`
   flex-direction: row;
   align-items: center;
-
-
-  background-color: ${(props) => props.theme.colors.lightCream || '#FFF'}; 
+  background-color: ${(props) => props.theme.colors.purpleDark}; 
+  
   border-radius: 8px;
   padding: 12px;
   gap: 12px;
   margin-bottom: 12px;
 
 
-  shadow-color: ${(props) => props.theme.colors.offBlack || '#000'}; 
+  shadow-color: ${(props) => props.theme.colors.purpleDarkest || '#000'}; 
   shadow-offset: 0px 2px;
   shadow-opacity: 0.2;
   shadow-radius: 4px;
@@ -54,13 +53,12 @@ const Title = styled.Text`
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 4px;
-
-  color: ${(props) => props.theme.colors.textPrimary || '#333'}; 
+  color: ${(props) => props.theme.colors.white }; 
 `;
 
 const Description = styled.Text`
   font-size: 12px;
-  color: ${(props) => props.theme.colors.textSecondary || '#666'}; 
+  color: ${(props) => props.theme.colors.textLight }; 
 `;
 
 const PriceRow = styled.View`
@@ -72,13 +70,13 @@ const PriceRow = styled.View`
 const OldPrice = styled.Text`
   text-decoration-line: line-through;
   font-size: 12px;
-  color: ${(props) => props.theme.colors.priceOld || '#999'}; 
+  color: ${(props) => props.theme.colors.purpleLight}; 
 `;
 
 const Price = styled.Text`
   font-size: 14px;
   font-weight: 700;
-  color: ${(props) => props.theme.colors.priceCurrent || '#000'}; 
+  color: ${(props) => props.theme.colors.purpleLightest}; 
 `;
 
 const Cover = styled.Image`
