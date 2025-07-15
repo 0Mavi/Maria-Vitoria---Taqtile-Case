@@ -25,8 +25,8 @@ Para configurar e rodar o projeto localmente, siga os passos abaixo:
 ### Clone o repositório:
 
 ```bash
-git clone https://github.com/Maria-Vitoria/Taqtile-Case.git
-cd Taqtile-Case
+git clone https://github.com/Maria-Vitoria-Taqtile-Case.git
+cd Maria-Vitoria-Taqtile-Case
 ```
 
 ### Instale as dependências:
