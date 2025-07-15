@@ -78,5 +78,5 @@ Isso iniciará o servidor de desenvolvimento do Expo. Você pode então usar o a
 
 O design deste aplicativo pode ser visualizado no Figma:
 
-🔗 [Clique aqui para abrir no Figma]([https://www.figma.com/file/SEU_ID_DO_ARQUIVO/SEU_PROJETO](https://www.figma.com/design/y6ZVeDj7P5hafOpzHejmVa/Purrfect-Deals?node-id=0-1&t=WFwfEMkpG3pD1QmX-1))
+🔗 [Clique aqui para abrir no Figma](https://www.figma.com/file/SEU_ID_DO_ARQUIVO/SEU_PROJETO](https://www.figma.com/design/y6ZVeDj7P5hafOpzHejmVa/Purrfect-Deals?node-id=0-1&t=WFwfEMkpG3pD1QmX-1))
 
