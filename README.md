@@ -25,8 +25,8 @@ Para configurar e rodar o projeto localmente, siga os passos abaixo:
 ### Clone o repositório:
 
 ```bash
-git clone https://github.com/Maria-Vitoria-Taqtile-Case.git
-cd Maria-Vitoria-Taqtile-Case
+git clone https://github.com/0Mavi/Maria-Vitoria---Taqtile-Case.git
+cd Maria-Vitoria---Taqtile-Case
 ```
 
 ### Instale as dependências:
@@ -73,4 +73,10 @@ Isso iniciará o servidor de desenvolvimento do Expo. Você pode então usar o a
 - **app.json**: Arquivo de configuração do Expo para o aplicativo.
 
 - **package.json**: Lista as dependências e scripts do projeto.
+
+## Design
+
+O design deste aplicativo pode ser visualizado no Figma:
+
+🔗 [Clique aqui para abrir no Figma]([https://www.figma.com/file/SEU_ID_DO_ARQUIVO/SEU_PROJETO](https://www.figma.com/design/y6ZVeDj7P5hafOpzHejmVa/Purrfect-Deals?node-id=0-1&t=WFwfEMkpG3pD1QmX-1))
 
