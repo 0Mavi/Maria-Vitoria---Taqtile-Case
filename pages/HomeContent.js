@@ -2,11 +2,15 @@ import React from 'react';
 import { SectionList } from 'react-native';
 import styled from 'styled-components/native';
 
+
 import GameCard from '../components/GameCard';
 import NavBar from '../components/NavBar';
 
+
+
 export default function HomeContent({ sections, loading, onSearch }) {
   return (
+
     <SectionList
       sections={sections}
       keyExtractor={(item) => item.dealID.toString()}
@@ -35,11 +39,12 @@ export default function HomeContent({ sections, loading, onSearch }) {
       stickySectionHeadersEnabled={false}
       contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 24 }}
     />
+ 
   );
 }
 
 const H1 = styled.Text`
-  font-size: 24px;
+  font-size:24px;
   font-weight: 700;
   margin: 15px 12px 10px 0;
   color: #000;
@@ -53,7 +58,7 @@ const H2 = styled.Text`
 `;
 
 const SectionTitle = styled.Text`
-  font-size: 18px;
+  font-size:16px;
   font-weight: bold;
   margin: 16px 0 8px;
   color: #000;
@@ -63,3 +68,4 @@ const Center = styled.Text`
   text-align: center;
   margin-top: 32px;
 `;
+

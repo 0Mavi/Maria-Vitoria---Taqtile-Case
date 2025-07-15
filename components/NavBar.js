@@ -1,7 +1,7 @@
-import React from 'react';
 import styled from 'styled-components/native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Image, Text } from 'react-native';
+
 
 export default function NavBar({ onSearch }) {
   return (
@@ -9,7 +9,10 @@ export default function NavBar({ onSearch }) {
       <LogoContainer> 
         <Image
           source={require('../assets/Logo.png')}
-          style={{ width: 60, height: 60, resizeMode: 'contain' }} 
+          style={{ 
+            width: 60, 
+            height: 60, 
+            resizeMode: 'contain' }} 
         />
 
          <Text
@@ -34,6 +37,8 @@ const Bar = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  
+
 `;
 
 const LogoContainer = styled.View`

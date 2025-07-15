@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
+
+
 export default function GameCard({
   title,
   metacritic,
@@ -37,12 +39,13 @@ const CardWrapper = styled.View`
   gap: 12px;
   margin-bottom: 12px;
 
-
   shadow-color: ${(props) => props.theme.colors.purpleDarkest || '#000'}; 
   shadow-offset: 0px 2px;
   shadow-opacity: 0.2;
   shadow-radius: 4px;
   elevation: 3;
+
+  width: 100%;
 `;
 
 const InfoArea = styled.View`
@@ -51,7 +54,7 @@ const InfoArea = styled.View`
 
 const Title = styled.Text`
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 4px;
   color: ${(props) => props.theme.colors.white }; 
 `;
@@ -80,8 +83,8 @@ const Price = styled.Text`
 `;
 
 const Cover = styled.Image`
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   border-radius: 6px;
   background-color: ${(props) => props.theme.colors.mutedLavender || '#CCC'}; 
 `;

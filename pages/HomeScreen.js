@@ -76,5 +76,5 @@ const Screen = styled(SafeAreaView)`
   flex: 1;
   background: ${(props) => props.theme.colors.white};
   padding-top: 0px;
-
+ 
 `;
