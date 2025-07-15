@@ -3,6 +3,12 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { Image, Text } from 'react-native';
 
 
+import { Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
+const isTablet = width > 600;
+
+
 export default function NavBar({ onSearch }) {
   return (
     <Bar>
@@ -10,14 +16,14 @@ export default function NavBar({ onSearch }) {
         <Image
           source={require('../assets/Logo.png')}
           style={{ 
-            width: 60, 
-            height: 60, 
+            width: isTablet ? 80 : 60, 
+            height: isTablet ? 80 : 60, 
             resizeMode: 'contain' }} 
         />
 
          <Text
          style={{
-           fontSize: 16,
+           fontSize: isTablet ? 24 : 16,
            fontWeight: '700',
            color: '#10091D',
          }}
@@ -25,7 +31,7 @@ export default function NavBar({ onSearch }) {
       </LogoContainer>
          
       <Touchable onPress={onSearch}>
-        <Ionicons name="search" size={22} color="#10091D" />
+        <Ionicons name="search" size={isTablet ? 26 : 22} color="#10091D" />
       </Touchable>
     </Bar>
   );

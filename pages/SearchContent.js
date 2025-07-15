@@ -19,7 +19,7 @@ export default function SearchContent({
     <>
       <Header>
         <BackBtn onPress={onClose}>
-          <Ionicons name="chevron-back" size={  isTablet ? 30 : 26} color="#10091D" />
+          <Ionicons name="chevron-back" size={26} color="#10091D" />
         </BackBtn>
         <SearchInput
           placeholder="Buscar jogo..."
@@ -30,7 +30,7 @@ export default function SearchContent({
        
         {(query || min || max) ? (
           <ClearButton onPress={onClearFilters}>
-            <Ionicons name="trash-outline" size={  isTablet ? 26 : 24} color="#10091D" />
+            <Ionicons name="trash-outline" size={24} color="#10091D" />
           </ClearButton>
         ) : null}
       </Header>
