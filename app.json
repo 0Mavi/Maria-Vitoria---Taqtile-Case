@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "taqtile-internship-challenge---deals-tracker",
+    "name": "Maria Vitoria-Taqtile Case",
     "slug": "snack-51fad8ce-a5d7-4875-895f-f529eacf44f8",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,

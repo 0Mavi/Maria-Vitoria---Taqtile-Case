@@ -7,8 +7,16 @@ import { Search } from './components/Search';
 // or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
 
+
+import HomeScreen from './pages/HomeScreen';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './theme/colors';
+
 export default function App() {
+  
   return (
-    <Search />
+   <ThemeProvider theme={theme}>
+      <HomeScreen />
+    </ThemeProvider>
   );
 }
